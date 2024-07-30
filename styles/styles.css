@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root{
     --color-primario: #F3F5FC;
     --color-secundario: #D8DFE8;
@@ -9,18 +8,25 @@
     --color-bts: #0A3871;
 
     --fuente-inter: "Inter", sans-serif;
-    --fuente-krona:"Krona One", sans-serif;
-
 }
 
 * {
     margin: 0;
     padding: 0;
+    background-color: var(--color-primario);
 }
 
 .header{
-    margin: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 5%;
 } 
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
 
 #logo_1{
     top: 40px;
@@ -41,7 +47,7 @@
     width: 42%;
     height: 60%;
     top: 80px;
-    left: 240px;
+    left: 150px;
     gap: 0px;
     opacity: 0px;
     border: none;
@@ -51,6 +57,7 @@
     line-height: 48px;
     text-align: left;
     background-color: var(--color-primario);
+    text-transform: lowercase;
 }
 
 .texto::placeholder{
@@ -96,7 +103,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top:74%;    
+    top:80%;    
 }
 
 .btn_encriptar{
@@ -164,9 +171,10 @@
     padding: 1%;
     gap: 16px;
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 70%;
     text-align: center;
+    background-color: var(--color-secundario);
 }
 
 .mensaje_encriptado h2{
@@ -178,6 +186,7 @@
     line-height: 120%;
     text-align: center;
     color: var(--color-cuaternario);
+    background-color: var(--color-secundario);
 }
 
 .mensaje_encriptado p{
@@ -210,8 +219,8 @@
     line-height: 150%;
     text-align: center;
     color: black;
+    background-color: var(--color-secundario);
 }
-
 
 .btn_copiar{
     box-sizing: border-box;
@@ -234,8 +243,6 @@
     text-align: center;
     cursor: pointer;
 }
-
-
 
 /*media query*/
 @media (max-width: 57.5em){
