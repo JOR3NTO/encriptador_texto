@@ -81,10 +81,13 @@ function desencriptar() {
 
     }
 }
+
+
+
 function copiar() {
 
-    const parrafo = document.getElementById('parrafo').innerText;
-            
+    let parrafo = document.getElementById('parrafo_desencriptado').innerText;
+    console.log(parrafo);        
     // Crear un textarea temporal para copiar el texto
     const textarea = document.createElement('textarea');
     textarea.value = parrafo;
@@ -95,8 +98,5 @@ function copiar() {
             
     // Eliminar el textarea temporal
     document.body.removeChild(textarea);
-            
-    // Opcional: Notificación de que el texto fue copiado
-    alert('Texto copiado: ' + parrafo);
-    
+
 }
